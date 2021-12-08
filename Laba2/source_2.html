@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+    <meta charset="utf-8">
+    <title>2_lab</title>
+  <link rel="stylesheet" href="mysite.css">
+   <style>
+      #para1 {
+        text-align: left;
+        color: blue;
+      } 
+    </style>
+    <style>
+	h2.center { text-align: center; }
+      h2 {
+       font-family: Georgia, serif; color: black; 
+      } 
+     </style>
+     <style>
+	h3.left { text-align: left;color: black; }
+      h2 {
+       font-family: Georgia, serif; color: black; 
+      } 
+     </style>
+      <style type="text/css">
+        p {
+         color: green; font-size: 22px;
+        }
+      </style>
+    <style>
+      .layer1 {
+      float: left; 
+      background: #fd0; 
+      border: 1px solid black;
+      width: 40%; 
+      }
+    </style>
+ <style>
+   body {
+    margin: 0;
+   }
+   .feedback {
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    background: #fff; /* Цвет фона */
+    color: #333; /* Цвет текста */
+    position: fixed; /* Фиксируем на одном месте  */
+    min-height: 100px; /* Минимальная высота */
+    top: 100px; left: -320px;
+    border-right: 20px solid #fc0; /* Оранжевая граница справа */
+    padding: 10px;
+    transition: left 1s; /* Анимация */
+   }
+   .feedback img {
+    float: left;
+    margin: 0 10px 0 0;
+   }
+   .feedback::after {
+    content: 'Contacts'; /* Выводим текст */
+    color: #000; /* Цвет надписи */
+    position: absolute; /* Абсолютное позиционирование */
+    right: -35px; bottom: 50px;
+    transform: rotate(-90deg); /* Поворачиваем текст */
+    -webkit-transform: rotate(-90deg);
+   }
+   .feedback:hover {
+    left: 0; /* При наведении сдвигаем вправо */
+   }
+  </style>
+   </head>
+  <body>
+     <h2 class="center">3 способа использования каскадных таблиц стилей</h2>
+      <p style="font-size: 24px; color: red; font-family: arial, helvetica,
+    sans-serif">
+      inline-описание
+      </p>
+     <div>с помощью контейнера "style" в секции заголовка</div>
+      <p id="para1" >подключить стилевую таблицу, расположенную во внешнем файле </p>
+
+
+    
+ 	    <dl class="layer1">
+          <dt><h3 class="left">Список дисциплін 3-го курсу:</h3></dt>
+          <dd>Інтерфейси паралельного програмування</dd>
+          <dd>Архітектура комп'ютерів</dd>
+          <dd>Internet-технологii</dd>
+          <dd>Моделювання систем</dd>
+          <dd>Системи керування базами даних</dd>
+          <dd>Системне програмне забезпечення</dd>
+          <dd>Комп'ютерна схемотехніка</dd>
+          <dd>Фізичне виховання та спорт</dd>
+          <dd>Імідж сучасного спецаіліста</dd>
+       </dl>
+
+ 
+<br style="float: left">  
+Короткий опис спеціальності Комп’ютерна інженерія:
+Технологічна сфера: знання комп’ютерів, їх збирання, тестування та ремонту, програмування, інтернет-сервісів і мобільних технологій.
+Математична сфера: проектування програмних додатків і розумних апаратних пристроїв, кібер-безпека, антивіруси, проектування цифрових систем на кристалах і комп’ютерних мереж.
+Сфера програмування для ринку праці: C ++, Java, Python, .NET, C #, VHDL, Verilog, System C.
+ <ol>Вміння і компетентності, якими буде володіти випускник за спеціальністю Комп’ютерна інженерія:
+    <li >Розробка і обслуговування систем і мереж під управлінням Windows, Unix, Linux;</li>
+    <li >Аналітика великих даних;</li>
+    <li >Проектування хмарних сервісів і мобільних додатків, розумних пристроїв, інтегрованих з Інтернет мережами.</li>
+    <li>Створення бездротових засобів комунікації, розробка програмних продуктів за допомогою мовних засобів високого і низького рівнів</li>
+    <li>Розробка користувальницьких і системних інтерфейсів, апаратних і програмних компіляторів, інтелектуальних систем програмування та проектування баз знань;</li>
+  </ol>
+</br>
+
+	  
+  <div style="position: relative;">
+   <div class="container">
+     <div class="element-1">FIRST ELEMENT</div>
+     <div class="element-2">SECOND ELEMENT</div>
+     <div class="element-3">THIRD ELEMENT</div>
+   </div>
+  </div>
+
+  <div class="feedback">
+   <img src="123.jpg" alt="" width="100" height="100">
+   Сайт ХНУРЕ:
+  <a href="https://nure.ua/"> https://nure.ua/ </a>
+  </div>
+
+ </body>
+</html>
