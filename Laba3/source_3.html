@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Trigger Button Click on Enter</h3>
+<p>Press the "Enter" key inside the input field to trigger the button.</p>
+
+<input id="myInput" type="number" value="Some text..">
+<button id="myBtn" onclick="javascript:createTableWithInterval()">Button</button>
+
+<script>
+var input = document.getElementById("myInput");
+
+function createTableWithInterval() {
+  document.write ('<table id="myTable"> <thead> <tr> <th> Header</th> </tr> </thead> <tbody></tbody> <tfoot> </tfoot> </table>');
+  
+  setInterval(function() {
+    writeTableRow();
+  }, input.value);
+
+}
+
+
+  
+function writeTableRow() {
+ let tbodyRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+    
+    // Insert a row at the end of table
+var newRow = tbodyRef.insertRow();
+
+
+    
+  for (i=1; i<6; i++) {
+// Insert a cell at the end of the row
+var newCell = newRow.insertCell();
+
+// Append a text node to the cell
+var newText = document.createTextNode('new row');
+newCell.appendChild(newText);
+  }
+}
+  
+  
+  
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("myBtn").click();
+    }
+  })
+</script>
+
+</body>
+</html>
